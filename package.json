@@ -1,0 +1,23 @@
+{
+  "name": "cestovka-tatiana-melicharova",
+  "version": "1.0.0",
+  "description": "Nastyluj stránku podle ukázky níže.",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass style/index.scss style.css",
+		"dev": "sass --watch style/index.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HTML-a-CSS-2-Podzim-2021-Online/cestovka-tatiana-melicharova.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HTML-a-CSS-2-Podzim-2021-Online/cestovka-tatiana-melicharova/issues"
+  },
+  "homepage": "https://github.com/HTML-a-CSS-2-Podzim-2021-Online/cestovka-tatiana-melicharova#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}

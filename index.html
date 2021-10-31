@@ -5,65 +5,176 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cestovka</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-	Last minute
-	Destinace
-	Časté otázky
+<body>	
+	<header class="header">
+		<div class="header__logo">
+			<img src="images/logo.svg" alt="Cestovka">
+		</div>
+		<nav class="header__navigation">
+			<a class="header__navigation--last-minute" href="#header__navigation--last-minute">Last minute</a>
+			<a class="header__navigation--destinace" href="#header__navigation--destinace">Destinace</a>
+			<a class="header__navigation--caste-otazky" href="#header__navigation--caste-otazky">Časté otázky</a>
+		</nav>
+	</header>
 
-	17 600 Kč
-	Pohoda pod palmami
-	Nejlepší dovolená pro nejvíc nejlínější lidi na světě
 
-	8 490 Kč
-	Klid u jezera
+	<section class="banners">
+		<div class="banners__main-left">
+			<div class="banners__main-photo-left">
+				<div class="banners__main-photo-left---price">
+					17 600 Kč
+				</div>
+				<div class="banners__main-photo-left---info">
+					<h2> Pohoda pod palmami</h2>
+					<p>
+						Nejlepší dovolená pro nejvíc nejlínější lidi na světě.
+					</p>
+				</div>
+			</div>
 
-	4 990 Kč
-	Výlet na kole
+			<div class="banners__upper-additional-photo-left">
+				<div class="banners__upper-additional-photo-left--price">
+					8 490 Kč
+				</div>
+				<div class="banners__upper-additional-photo-left--title">
+					Klid u jezera
+				</div>
+			</div>
 
-	Podpora na místě
-	V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.
+			<div class="banners__lower-additional-photo-left">
+				<div class="banners__lower-additional-photo-left--price">
+					4 990 Kč
+				</div>
+				<div class="banners__lower-additional-photo-left--title">
+					Výlet na kole
+				</div>
+			</div>
+		</div>
+	</section>
 
-	Služby na letišti
-	Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.
+	<section class="cards">
+		<div class="cards__support">
+			<img src="images/map.svg" alt="Podpora na místě">
+			<h4>Podpora na místě</h4>
+			<p>
+				V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.
+			</p>
+		</div>
 
-	Do celého světa
-	Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.
+		<div class="cards__services">
+			<img src="images/plane.svg" alt="Služby na letišti">
+			<h4>Služby na letišti</h4>
+			<p>
+				Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.
+			</p>
+		</div>
 
-	Vaše bezpečí
-	Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.
+		<div class="cards__to-whole-world">
+			<img src="images/globe.svg" alt="Do celého světa">
+			<h4>Do celého světa</h4>
+			<p>
+				Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.
+			</p>
+		</div>
 
-	Last minute zájezdy
+		<div class="cards__your-safety">
+			<img src="images/shield.svg" alt="Vaše bezpečí">
+			<h4>Vaše bezpečí</h4>
+			<p>
+				Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.
+			</p>
+		</div>
+	</section>
 
-	18 500 Kč
-	Grand Canyon
+	<section class="banners">
+		<h3>Last minute zájezdy</h3>
+		<div class="banners__main-right">
+			<div class="banners__upper-additional-photo-right">
+				<div class="banners_upper-additional-photo-right--price">
+					18 500 Kč
+				</div>
+				<div class="banners__upper-additional-photo-right--title">
+					Grand Canyon
+				</div>
+			</div>
 
-	8 900 Kč
-	Pěšky po Kanárských ostrovech
+			<div class="banners__lower-additional-photo-right">
+				<div class="banners__lower-additional-photo-right--price">
+					8 900 Kč
+				</div>
+				<div class="banners__lower-additional-photo-right--title">
+					Pěšky po Kanárských ostrovech
+				</div>
+			</div>
 
-	15 900 Kč
-	Romantika u horského jezera
-	Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.
+			<div class="banners__main-photo-right">
+				<div class="banners__main-photo-right--price">
+					15 900 Kč
+				</div>
+				<div class="banners__main-photo-right--info">
+					<h2>Romantika u horského jezera</h2>
+					<p>
+						Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.
+					</p>
+				</div>
+			</div>
+	</section>
 
-	Novinky
+	<section class="news">
+		<h3>Novinky</h3>
+		<div class="news articles">
+			<div class="news articles__left">
+				<div class="news articles__left--date">
+					15. 8. 2020
+				</div>
+				<div class="news articles__left--title">
+					Magický Zanzibar
+				</div>
+				<div class="news articles__left--article-description">
+					Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře,
+					exotická flóra i fauna.
+				</div>
+			</div>
 
-	15. 8. 2020
-	Magický Zanzibar
-	Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře,
-	exotická flóra i fauna.
+			<div class="news articles__middle">
+				<div class="news articles__middle--date">
+					31. 9. 2020
+				</div>
+				<div class="news articles__middle--title">
+					Návrat českých občanů ze zahraničí
+				</div>
+				<div class="news articles__middle--article-description">
+					Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření
+					Ministerstva zdravotnictví ČR.
+				</div>
+			</div>
 
-	31. 9. 2020
-	Návrat českých občanů ze zahraničí
-	Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření
-	Ministerstva zdravotnictví ČR.
+			<div class="news articles__right">
+				<div class="news articles__right--date">
+					6. 10. 2020
+				</div>
+				<div class="news articles__right--title">
+					Na Kubu s PCR testem
+				</div>
+				<div class="news articles__right--article-description">
+					Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před
+					příletem do destinace.
+				</div>
+			</div>
+		</div>
+	</section>
 
-	6. 10. 2020
-	Na Kubu s PCR testem
-	Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před
-	příletem do destinace.
-
-	©2021, Czechitas
+	<footer class="footer">
+		<div class="footer__copyright">
+			©2021, Czechitas
+		</div>
+	</footer>
 </body>
 
 </html>

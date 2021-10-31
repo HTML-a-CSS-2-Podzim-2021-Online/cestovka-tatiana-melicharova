@@ -1,0 +1,26 @@
+$main-color: #F03000;
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 1vw;
+}
+
+h2 {
+	font-size: 2vw;
+}
+
+h3 {
+	font-size: 1.6vw;
+}

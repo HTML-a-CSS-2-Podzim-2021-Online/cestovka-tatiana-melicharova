@@ -1,0 +1,21 @@
+.news .articles
+    display: grid
+    grid-template: 1fr / repeat(3, 1fr)
+    gap: 1.5vw
+    justify-content: space-between
+    padding: 0
+
+    &__left,
+    &__middle,
+    &__right
+        background-color: #DDDCDC
+        padding: 1.5vw
+
+        &--date
+            color: #727272
+
+        &--title 
+            color: $main-color
+            font-size: 1vw
+            font-weight: 700
+            margin: 1vw 0

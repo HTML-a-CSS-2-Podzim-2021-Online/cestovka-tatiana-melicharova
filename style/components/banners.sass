@@ -1,0 +1,64 @@
+.banners
+    color: #FFFFFF
+
+    & h3 
+        color: #000000
+
+    &__main-left,
+    &__main-right
+        display: grid
+        grid-template: repeat(2, 13vw) / repeat(3, 1fr)
+        grid-gap: 1vw       
+
+    &__main-photo-left,
+    &__upper-additional-photo-left,
+    &__lower-additional-photo-left,
+    &__main-photo-right,
+    &__upper-additional-photo-right,
+    &__lower-additional-photo-right
+        background-size: cover
+        background-repeat: no-repeat
+        display: grid
+        align-content: space-between    
+        padding: 1.2vw
+
+        &--price
+            background-color: $main-color
+            padding: 0.7vw
+            width: 7vw
+            text-align: center
+            margin-left: 0.2vw
+
+        &--title
+            font-weight: 700
+            margin-bottom: 1.5vh 
+            font-size: 1.2vw
+            margin-left: 0.2vw
+
+        & p 
+            font-size: 1.2vw
+
+    &__main-photo-left
+        grid-area: 1 / 1 / span 2 / span 2
+        background-image: linear-gradient(0deg, rgba(51,51,51,0.8746849081429446) 0%, rgba(255,255,255,0) 42%), url(images/palmy.jpg)
+        padding: 1vw 2vw
+
+    &__main-photo-right
+        grid-area: 1 / 2 / span 2 / span 2
+        background-image: linear-gradient(0deg, rgba(51,51,51,0.8746849081429446) 0%, rgba(255,255,255,0) 42%), url(images/lodicka.jpg)
+        padding: 1vw 2vw
+
+        &--price
+            margin-top: 1vw
+        
+    &__upper-additional-photo-left
+        background-image: url(images/jezero.jpg)
+
+    &__upper-additional-photo-right
+        background-image: url(images/podkova.jpg)
+
+    &__lower-additional-photo-left
+        background-image: url(images/nakole.jpg)
+
+    &__lower-additional-photo-right
+        background-image: linear-gradient(0deg, rgba(51,51,51,0.8746849081429446) 0%, rgba(255,255,255,0) 42%), url(images/zatoka.jpg)
