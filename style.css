@@ -10,17 +10,41 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  font-size: 1vw;
+  font-size: 1.5vh;
+}
+@media (min-width: 500px) {
+  body {
+    font-size: 1.7vh;
+  }
+}
+@media (min-width: 800px) {
+  body {
+    font-size: 1vw;
+  }
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 3.5vh;
+}
+@media (min-width: 800px) {
+  h2 {
+    font-size: 2vw;
+  }
 }
 
 h3 {
-  font-size: 1.6vw;
+  font-size: 2.5vh;
+}
+@media (min-width: 800px) {
+  h3 {
+    font-size: 1.6vw;
+  }
+}
+
+h4 {
+  font-size: 2.5vh;
 }
 
 .header {
@@ -54,69 +78,140 @@ h3 {
 }
 .banners__main-left, .banners__main-right {
   display: grid;
-  grid-template: repeat(2, 13vw)/repeat(3, 1fr);
-  grid-gap: 1vw;
+  grid-template: repeat(4, 15vh)/repeat(1, 1fr);
+  grid-gap: 2vh;
+}
+@media (min-width: 500px) {
+  .banners__main-left, .banners__main-right {
+    grid-template: repeat(3, 22vh)/repeat(2, 1fr);
+    grid-gap: 2.5vh;
+  }
+}
+@media (min-width: 800px) {
+  .banners__main-left, .banners__main-right {
+    grid-template: repeat(2, 13vw)/repeat(3, 1fr);
+    grid-gap: 1vw;
+  }
 }
 .banners__main-photo-left, .banners__upper-additional-photo-left, .banners__lower-additional-photo-left, .banners__main-photo-right, .banners__upper-additional-photo-right, .banners__lower-additional-photo-right {
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
   align-content: space-between;
-  padding: 1.2vw;
+  padding: 2vh;
+}
+@media (min-width: 800px) {
+  .banners__main-photo-left, .banners__upper-additional-photo-left, .banners__lower-additional-photo-left, .banners__main-photo-right, .banners__upper-additional-photo-right, .banners__lower-additional-photo-right {
+    padding: 1.2vw;
+  }
 }
 .banners__main-photo-left--price, .banners__upper-additional-photo-left--price, .banners__lower-additional-photo-left--price, .banners__main-photo-right--price, .banners__upper-additional-photo-right--price, .banners__lower-additional-photo-right--price {
   background-color: #F03000;
-  padding: 0.7vw;
-  width: 7vw;
+  padding: 1.2vh;
+  width: 9.5vh;
   text-align: center;
-  margin-left: 0.2vw;
+  margin-left: 1vh;
+}
+@media (min-width: 500px) {
+  .banners__main-photo-left--price, .banners__upper-additional-photo-left--price, .banners__lower-additional-photo-left--price, .banners__main-photo-right--price, .banners__upper-additional-photo-right--price, .banners__lower-additional-photo-right--price {
+    width: 11vh;
+    padding: 1.5vh;
+  }
+}
+@media (min-width: 800px) {
+  .banners__main-photo-left--price, .banners__upper-additional-photo-left--price, .banners__lower-additional-photo-left--price, .banners__main-photo-right--price, .banners__upper-additional-photo-right--price, .banners__lower-additional-photo-right--price {
+    margin-left: 0.2vw;
+    padding: 0.7vw;
+    width: 7vw;
+  }
 }
 .banners__main-photo-left--title, .banners__upper-additional-photo-left--title, .banners__lower-additional-photo-left--title, .banners__main-photo-right--title, .banners__upper-additional-photo-right--title, .banners__lower-additional-photo-right--title {
   font-weight: 700;
-  margin-bottom: 1.5vh;
-  font-size: 1.2vw;
-  margin-left: 0.2vw;
+  margin-bottom: 0.5vh;
+  font-size: 2.4vh;
+  margin-left: 1vh;
+}
+@media (min-width: 800px) {
+  .banners__main-photo-left--title, .banners__upper-additional-photo-left--title, .banners__lower-additional-photo-left--title, .banners__main-photo-right--title, .banners__upper-additional-photo-right--title, .banners__lower-additional-photo-right--title {
+    font-size: 1.2vw;
+    margin-left: 0.2vw;
+  }
 }
 .banners__main-photo-left p, .banners__upper-additional-photo-left p, .banners__lower-additional-photo-left p, .banners__main-photo-right p, .banners__upper-additional-photo-right p, .banners__lower-additional-photo-right p {
-  font-size: 1.2vw;
+  font-size: 1.9vh;
+}
+@media (min-width: 800px) {
+  .banners__main-photo-left p, .banners__upper-additional-photo-left p, .banners__lower-additional-photo-left p, .banners__main-photo-right p, .banners__upper-additional-photo-right p, .banners__lower-additional-photo-right p {
+    font-size: 1.2vw;
+  }
+}
+.banners__upper-additional-photo-left, .banners__lower-additional-photo-left, .banners__upper-additional-photo-right, .banners__lower-additional-photo-right {
+  background-position-y: 75%;
 }
 .banners__main-photo-left {
-  grid-area: 1/1/span 2/span 2;
+  grid-area: 1/1/span 2/1;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.8746849081) 0%, rgba(255, 255, 255, 0) 42%), url(images/palmy.jpg);
   padding: 1vw 2vw;
 }
+@media (min-width: 500px) {
+  .banners__main-photo-left {
+    grid-area: 1/1/span 2/span 2;
+  }
+}
 .banners__main-photo-right {
-  grid-area: 1/2/span 2/span 2;
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.8746849081) 0%, rgba(255, 255, 255, 0) 42%), url(images/lodicka.jpg);
   padding: 1vw 2vw;
 }
 .banners__main-photo-right--price {
   margin-top: 1vw;
 }
+@media (min-width: 500px) {
+  .banners__main-photo-right {
+    grid-area: 1/1/span 2/span 2;
+  }
+}
+@media (min-width: 800px) {
+  .banners__main-photo-right {
+    grid-area: 1/2/span 2/span 2;
+  }
+}
 .banners__upper-additional-photo-left {
-  background-image: url(images/jezero.jpg);
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255, 255, 255, 0) 42%), url(images/jezero.jpg);
 }
 .banners__upper-additional-photo-right {
-  background-image: url(images/podkova.jpg);
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255, 255, 255, 0) 42%), url(images/podkova.jpg);
 }
 .banners__lower-additional-photo-left {
-  background-image: url(images/nakole.jpg);
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255, 255, 255, 0) 42%), url(images/nakole.jpg);
 }
 .banners__lower-additional-photo-right {
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.8746849081) 0%, rgba(255, 255, 255, 0) 42%), url(images/zatoka.jpg);
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255, 255, 255, 0) 42%), url(images/zatoka.jpg);
 }
 
 .cards {
   display: grid;
-  grid-template: 1fr/repeat(4, 1fr);
-  column-gap: 1vw;
+  grid-template: repeat(4, 1fr)/1fr;
+  gap: 1vh;
   justify-content: space-between;
-  text-align: center;
-  margin: 2.5vw 0;
+  text-align: left;
+  margin: 4vh 0;
+}
+@media (min-width: 800px) {
+  .cards {
+    grid-template: 1fr/repeat(4, 1fr);
+    text-align: center;
+    margin: 2.5vw 0;
+  }
 }
 .cards__support, .cards__services, .cards__to-whole-world, .cards__your-safety {
   background-color: #DDDCDC;
-  padding: 1.5vw;
+  padding: 2vh 5vh;
+  display: grid;
+}
+@media (min-width: 800px) {
+  .cards__support, .cards__services, .cards__to-whole-world, .cards__your-safety {
+    padding: 1.5vw;
+  }
 }
 .cards__support img, .cards__services img, .cards__to-whole-world img, .cards__your-safety img {
   width: 3vw;

@@ -7,8 +7,20 @@
     &__main-left,
     &__main-right
         display: grid
-        grid-template: repeat(2, 13vw) / repeat(3, 1fr)
-        grid-gap: 1vw       
+        grid-template: repeat(4, 15vh) / repeat(1, 1fr)
+        grid-gap: 2vh
+
+    @media (min-width: 500px)
+        &__main-left,
+        &__main-right
+            grid-template: repeat(3, 22vh) / repeat(2, 1fr)
+            grid-gap: 2.5vh
+
+    @media ( min-width: 800px) 
+        &__main-left,
+        &__main-right
+            grid-template: repeat(2, 13vw) / repeat(3, 1fr)
+            grid-gap: 1vw       
 
     &__main-photo-left,
     &__upper-additional-photo-left,
@@ -19,46 +31,81 @@
         background-size: cover
         background-repeat: no-repeat
         display: grid
-        align-content: space-between    
-        padding: 1.2vw
+        align-content: space-between
+        padding: 2vh  
+
+        @media (min-width: 800px)    
+            padding: 1.2vw
 
         &--price
             background-color: $main-color
-            padding: 0.7vw
-            width: 7vw
+            padding: 1.2vh
+            width: 9.5vh
             text-align: center
-            margin-left: 0.2vw
+            margin-left: 1vh
+
+            @media (min-width: 500px)
+                width: 11vh
+                padding: 1.5vh
+
+            @media (min-width: 800px)
+                margin-left: 0.2vw
+                padding: 0.7vw
+                width: 7vw
 
         &--title
             font-weight: 700
-            margin-bottom: 1.5vh 
-            font-size: 1.2vw
-            margin-left: 0.2vw
+            margin-bottom: 0.5vh 
+            font-size: 2.4vh
+            margin-left: 1vh
+
+            @media (min-width: 800px)
+                font-size: 1.2vw
+                margin-left: 0.2vw
 
         & p 
-            font-size: 1.2vw
+            font-size: 1.9vh
+
+            @media (min-width: 800px)
+                font-size: 1.2vw            
+
+    &__upper-additional-photo-left,
+    &__lower-additional-photo-left,
+    &__upper-additional-photo-right,
+    &__lower-additional-photo-right
+        background-position-y: 75%
 
     &__main-photo-left
-        grid-area: 1 / 1 / span 2 / span 2
+        grid-area: 1 / 1 / span 2 / 1 
         background-image: linear-gradient(0deg, rgba(51,51,51,0.8746849081429446) 0%, rgba(255,255,255,0) 42%), url(images/palmy.jpg)
         padding: 1vw 2vw
 
+        @media (min-width: 500px)
+            grid-area: 1 / 1 / span 2 / span 2         
+
     &__main-photo-right
-        grid-area: 1 / 2 / span 2 / span 2
         background-image: linear-gradient(0deg, rgba(51,51,51,0.8746849081429446) 0%, rgba(255,255,255,0) 42%), url(images/lodicka.jpg)
         padding: 1vw 2vw
 
         &--price
             margin-top: 1vw
+
+        @media (min-width: 500px)
+            grid-area: 1 / 1 / span 2 / span 2
+
+        @media (min-width: 800px)
+            grid-area: 1 / 2 / span 2 / span 2
         
     &__upper-additional-photo-left
-        background-image: url(images/jezero.jpg)
+        background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255,255,255,0) 42%), url(images/jezero.jpg)
 
     &__upper-additional-photo-right
-        background-image: url(images/podkova.jpg)
+        background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255,255,255,0) 42%), url(images/podkova.jpg)
 
     &__lower-additional-photo-left
-        background-image: url(images/nakole.jpg)
+        background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255,255,255,0) 42%), url(images/nakole.jpg)
 
     &__lower-additional-photo-right
-        background-image: linear-gradient(0deg, rgba(51,51,51,0.8746849081429446) 0%, rgba(255,255,255,0) 42%), url(images/zatoka.jpg)
+        background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.875) 0%, rgba(255,255,255,0) 42%), url(images/zatoka.jpg)
+
+    
